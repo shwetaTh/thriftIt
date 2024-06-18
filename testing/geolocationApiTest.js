@@ -1,4 +1,8 @@
-const apiKey = "F968B50F27D4EF3132A74DFA622C50DD";
+import dotenv from "dotenv"
+dotenv.config({
+    path:'./env'
+})
+const apiKey = process.env.GEOAPI;
 const ip = "8.8.8.8"; // Example IP address
 const url = `https://api.ip2location.io/?key=${apiKey}&ip=${ip}`;
 
