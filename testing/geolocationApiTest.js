@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
 dotenv.config({
-    path:'./env'
+    path:'.env'
 })
 import { geoApiKey } from './testConstants.js';
 async function getLocationData(ipList, apiKey) {
